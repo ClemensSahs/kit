@@ -1,3 +1,7 @@
-fragment Message on Message {
-  text
+
+query message ($id: ID!){
+  Message(id: $id) {
+    id
+    text
+  }
 }

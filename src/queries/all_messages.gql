@@ -1,7 +1,6 @@
-#import "./message.gql"
 
-query AllMessages {
-  allMessages(first:1) {
-    ...Message
+query AllMessages ($first: Int!){
+  allMessages(first: $first) {
+    id
   }
 }
